@@ -10,7 +10,7 @@ metadata:
     openshift.io/display-name: "fbprophet metric prediction"
     version: 0.1.0
     tags: fbprophet,prometheus,metrics,anomaly detection
-    template.openshift.io/documentation-url: https://github.com/AICoE/prometheus-anomaly-detector
+    template.openshift.io/documentation-url: https://github.com/ramireszi/prometheus-anomaly-detector
   labels:
     application: ${APPLICATION_NAME}
     template: ${APPLICATION_NAME}-template
@@ -21,7 +21,7 @@ parameters:
     name: APPLICATION_NAME
     required: true
   - name: GIT_URI
-    value: "https://github.com/AICoE/prometheus-anomaly-detector.git"
+    value: "https://github.com/ramireszi/prometheus-anomaly-detector.git"
     required: true
   - name: FLT_DEBUG_MODE
     description: "Enable verbose log for debugging"
